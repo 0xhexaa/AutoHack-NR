@@ -3,11 +3,11 @@ from colorama import init, Fore, Style
 init(autoreset=True)
 
 class Log:
-    def __init__(self, debug=True):
+    def __init__(self, debug=False):
         self.debug_mode = debug
         
     def debug(self, message: str = ""):
-        if not self.debug_mode or message:
+        if not self.debug_mode or not message:
             return
 
         print(f"{Fore.CYAN}[DEBUG]{Style.RESET_ALL} {message}")

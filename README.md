@@ -2,7 +2,10 @@
 
 Automated Vulnerability Discovery — For the Good Guys.
 
-Python 3.8+ | MIT License | Experimental
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Contributors](https://img.shields.io/github/contributors/0xhexaa/autohack-nr.svg)](https://github.com/0xhexaa/autohack-nr/graphs/contributors)
+[![Status: Experimental](https://img.shields.io/badge/status-experimental-red.svg)]()
 
 EDUCATIONAL PURPOSES ONLY
 This tool is designed for security research, authorized testing, and learning.
@@ -27,13 +30,12 @@ In this new reality, defenders need automated weapons too.
 
 Contributors
 
-Hexa
-GitHub: @0xhexaa
-Role: Lead Developer
+This project is built and maintained by:
 
-Axiom
-GitHub: @imstillaxiom
-Role: Co-Developer / Security Research
+- [@0xhexaa](https://github.com/0xhexaa) (Hexa) — Lead Developer
+- [@imstillaxiom](https://github.com/imstillaxiom) (Axiom) — Co-Developer / Security Research
+
+Full contributor list: https://github.com/0xhexaa/autohack-nr/graphs/contributors
 
 ---
 
@@ -68,7 +70,7 @@ Installation
 git clone https://github.com/0xhexaa/autohack-nr.git
 cd autohack-nr
 pip install -r requirements.txt
-python autohack.py --help
+python main.py --help
 
 Requirements
 - Python 3.8+
@@ -80,11 +82,11 @@ Usage
 
 Basic SQL Injection Scan
 
-python autohack.py -u "http://target.com/page?id=1" --sql
+python main.py -u "http://target.com/page?id=1" --sql
 
 Advanced Options
 
-python autohack.py -u "http://target.com/search?q=test" \
+python main.py -u "http://target.com/search?q=test" \
     --sql \
     --level 5 \
     --threads 20 \
@@ -152,15 +154,10 @@ Connect
 
 Hexa
 GitHub: https://github.com/0xhexaa
-Twitter: https://twitter.com/0xhexaa
 
 Axiom
 GitHub: https://github.com/imstillaxiom
-Twitter: https://twitter.com/imstillaxiom
 
 ---
 
-Star this repo if you believe in ethical security automation.
 Stay safe. Stay legal. Stay ahead.
-
-Made with coffee and a healthy dose of paranoia.
